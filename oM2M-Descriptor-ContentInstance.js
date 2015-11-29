@@ -17,7 +17,7 @@ module.exports = function(RED){
                     msg.payload = "<obj>";
                     msg.payload += "<str name='type' val='" + this.obixType +"'/>";
                     msg.payload += "<str name='location' val='" + this.obixLocation + "'/>";
-                    msg.payload += "<str name='appId' val='" + this.appId + "'/>";
+                    msg.payload += "<str name='appID' val='" + this.appId + "'/>";
                     msg.payload += "<op name='getValue' href='" + this.xSCL.sclId + "/applications/" + this.appId + "/containers/DATA/contentInstances/latest/content' ";
                     msg.payload += " in='obix:Nil' out='obix:Nil' is='retrieve'/>";
                     msg.payload += "</obj>";
